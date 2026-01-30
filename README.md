@@ -204,7 +204,7 @@ print("✈️ 我的第一台模擬無人機！")
 
 - **專案維護者**：（待填寫）
 - **聯絡信箱**：（待填寫）
-- **問題回報**：[GitHub Issues](https://github.com/你的帳號/Python-Flight-Academy/issues)
+- **問題回報**：[GitHub Issues](https://github.com/pc0808f/Python-Flight-Academy/issues)
 
 ---
 
