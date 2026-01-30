@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="飛行驅動 Python - 18週高中無人機程式設計實作課程">
+    <meta name="keywords" content="Python, Crazyflie, 無人機, 程式設計, 高中, 108課綱">
+    <title>飛行驅動 Python - 無人機程式設計課程</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- 導航欄 -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <i class="fas fa-drone"></i>
+                <span>飛行驅動 Python</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#about">課程簡介</a></li>
+                <li><a href="#schedule">課程架構</a></li>
+                <li><a href="#features">課程特色</a></li>
+                <li><a href="#resources">教學資源</a></li>
+                <li><a href="#contact">聯絡我們</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <i class="fas fa-paper-plane"></i>
+                飛行驅動 Python
+            </h1>
+            <p class="hero-subtitle">透過 Crazyflie 無人機，讓高中生在有趣的實作中學習 Python 程式設計</p>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <div class="stat-number">18</div>
+                    <div class="stat-label">週課程</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">4</div>
+                    <div class="stat-label">學習面向</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">108</div>
+                    <div class="stat-label">課綱對應</div>
+                </div>
+            </div>
+            <div class="hero-buttons">
+                <a href="#schedule" class="btn btn-primary">查看課程</a>
+                <a href="https://github.com/你的帳號/Python-Flight-Academy" class="btn btn-secondary" target="_blank">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 課程簡介 -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">課程簡介</h2>
+            <div class="about-grid">
+                <div class="about-card">
+                    <i class="fas fa-code card-icon"></i>
+                    <h3>程式設計</h3>
+                    <p>從零開始學習 Python，掌握變數、迴圈、函數、資料結構等核心概念</p>
+                </div>
+                <div class="about-card">
+                    <i class="fas fa-tools card-icon"></i>
+                    <h3>硬體組裝</h3>
+                    <p>認識 Crazyflie 無人機結構，完成組裝與維護，理解軟硬體整合</p>
+                </div>
+                <div class="about-card">
+                    <i class="fas fa-gamepad card-icon"></i>
+                    <h3>無人機駕駛</h3>
+                    <p>手動遙控飛行訓練，建立空間感與飛行安全意識</p>
+                </div>
+                <div class="about-card">
+                    <i class="fas fa-laptop-code card-icon"></i>
+                    <h3>程式控制飛行</h3>
+                    <p>使用 Python 程式控制無人機，實現自主飛行任務</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 三階段學習 -->
+    <section class="learning-stages">
+        <div class="container">
+            <h2 class="section-title">三階段學習模式</h2>
+            <div class="stages-timeline">
+                <div class="stage-item">
+                    <div class="stage-icon">
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <div class="stage-content">
+                        <h3>階段一：模擬器階段</h3>
+                        <p class="stage-weeks">W1-W8</p>
+                        <ul>
+                            <li>Python 基礎語法學習</li>
+                            <li>Webots 模擬器飛行控制</li>
+                            <li>零硬體風險，學生可在家練習</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="stage-arrow">
+                    <i class="fas fa-arrow-down"></i>
+                </div>
+                <div class="stage-item">
+                    <div class="stage-icon">
+                        <i class="fas fa-wrench"></i>
+                    </div>
+                    <div class="stage-content">
+                        <h3>階段二：實機組裝與手控</h3>
+                        <p class="stage-weeks">W9-W10</p>
+                        <ul>
+                            <li>Crazyflie 硬體組裝</li>
+                            <li>手動遙控訓練</li>
+                            <li>建立飛行安全意識</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="stage-arrow">
+                    <i class="fas fa-arrow-down"></i>
+                </div>
+                <div class="stage-item">
+                    <div class="stage-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <div class="stage-content">
+                        <h3>階段三：程式實飛</h3>
+                        <p class="stage-weeks">W11-W18</p>
+                        <ul>
+                            <li>cflib SDK 實機控制</li>
+                            <li>感測器數據應用</li>
+                            <li>期末專題開發與展示</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 18週進度表 -->
+    <section id="schedule" class="section schedule-section">
+        <div class="container">
+            <h2 class="section-title">18 週課程進度</h2>
+            <div class="schedule-grid">
+                <!-- W1-W8 模擬器階段 -->
+                <div class="phase-group">
+                    <h3 class="phase-title">
+                        <i class="fas fa-laptop"></i> 模擬器階段
+                    </h3>
+                    <div class="week-cards">
+                        <div class="week-card">
+                            <div class="week-number">W1</div>
+                            <h4>Python 環境建置</h4>
+                            <p class="week-tech">變數、資料型態、輸出</p>
+                        </div>
+                        <div class="week-card">
+                            <div class="week-number">W2</div>
+                            <h4>Webots 模擬器設置</h4>
+                            <p class="week-tech">import、物件導向</p>
+                        </div>
+                        <div class="week-card">
+                            <div class="week-number">W3</div>
+                            <h4>模擬起飛與降落</h4>
+                            <p class="week-tech">函數呼叫、time.sleep()</p>
+                        </div>
+                        <div class="week-card">
+                            <div class="week-number">W4</div>
+                            <h4>精準高度控制</h4>
+                            <p class="week-tech">函數參數、整數/浮點數</p>
+                        </div>
+                        <div class="week-card">
+                            <div class="week-number">W5</div>
+                            <h4>水平移動控制</h4>
+                            <p class="week-tech">多參數函數</p>
+                        </div>
+                        <div class="week-card">
+                            <div class="week-number">W6</div>
+                            <h4>變數與運算應用</h4>
+                            <p class="week-tech">算術運算、變數更新</p>
+                        </div>
+                        <div class="week-card">
+                            <div class="week-number">W7</div>
+                            <h4>旋轉與組合動作</h4>
+                            <p class="week-tech">浮點數、組合指令</p>
+                        </div>
+                        <div class="week-card">
+                            <div class="week-number">W8</div>
+                            <h4>幾何飛行挑戰</h4>
+                            <p class="week-tech">程式碼重構、註解</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- W9-W10 實機階段 -->
+                <div class="phase-group">
+                    <h3 class="phase-title">
+                        <i class="fas fa-wrench"></i> 實機組裝與手控
+                    </h3>
+                    <div class="week-cards">
+                        <div class="week-card highlight">
+                            <div class="week-number">W9</div>
+                            <h4>Crazyflie 組裝</h4>
+                            <p class="week-tech">For 迴圈、range()</p>
+                            <span class="badge">組裝日</span>
+                        </div>
+                        <div class="week-card highlight">
+                            <div class="week-number">W10</div>
+                            <h4>手動遙控訓練</h4>
+                            <p class="week-tech">While 迴圈、break</p>
+                            <span class="badge">技能檢核</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- W11-W18 程式實飛階段 -->
+                <div class="phase-group">
+                    <h3 class="phase-title">
+                        <i class="fas fa-rocket"></i> 程式實飛
+                    </h3>
+                    <div class="week-cards">
+                        <div class="week-card">
+                            <div class="week-number">W11</div>
+                            <h4>實機連線與首飛</h4>
+                            <p class="week-tech">try-except、異常處理</p>
+                        </div>
+                        <div class="week-card">
+                            <div class="week-number">W12</div>
+                            <h4>重複巡邏任務</h4>
+                            <p class="week-tech">For 迴圈實戰</p>
+                        </div>
+                        <div class="week-card">
+                            <div class="week-number">W13</div>
+                            <h4>電量檢查機制</h4>
+                            <p class="week-tech">If-Else、布林值</p>
+                        </div>
+                        <div class="week-card">
+                            <div class="week-number">W14</div>
+                            <h4>互動式控制</h4>
+                            <p class="week-tech">input()、字串比對</p>
+                        </div>
+                        <div class="week-card">
+                            <div class="week-number">W15</div>
+                            <h4>ToF 高度感測器</h4>
+                            <p class="week-tech">感測器讀取、回傳值</p>
+                        </div>
+                        <div class="week-card">
+                            <div class="week-number">W16</div>
+                            <h4>IMU 與自定義函數</h4>
+                            <p class="week-tech">def、參數預設值</p>
+                        </div>
+                        <div class="week-card">
+                            <div class="week-number">W17</div>
+                            <h4>航點飛行</h4>
+                            <p class="week-tech">Lists、元組</p>
+                        </div>
+                        <div class="week-card highlight">
+                            <div class="week-number">W18</div>
+                            <h4>期末專題發表</h4>
+                            <p class="week-tech">綜合應用</p>
+                            <span class="badge">成果展示</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 課程特色 -->
+    <section id="features" class="section features-section">
+        <div class="container">
+            <h2 class="section-title">課程特色</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-desktop feature-icon"></i>
+                    <h3>模擬器先行</h3>
+                    <p>使用 Webots 模擬器，降低硬體損壞風險，學生可在家自主練習</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-layer-group feature-icon"></i>
+                    <h3>階梯式難度</h3>
+                    <p>從模擬到實機，從手控到程式控制，循序漸進提升能力</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-shield-alt feature-icon"></i>
+                    <h3>安全意識融入</h3>
+                    <p>每週強化飛行安全與程式除錯能力，建立負責任的科技態度</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-puzzle-piece feature-icon"></i>
+                    <h3>四面向整合</h3>
+                    <p>程式設計、硬體組裝、手動駕駛、程式控制，全方位學習</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-book feature-icon"></i>
+                    <h3>符合 108 課綱</h3>
+                    <p>對應資訊科技素養指標，培養運算思維與問題解決能力</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-project-diagram feature-icon"></i>
+                    <h3>專題導向學習</h3>
+                    <p>期末專題培養創意與整合能力，展現學習成果</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 教學資源 -->
+    <section id="resources" class="section resources-section">
+        <div class="container">
+            <h2 class="section-title">教學資源</h2>
+            <div class="resources-grid">
+                <div class="resource-card">
+                    <i class="fas fa-file-alt"></i>
+                    <h3>課程規劃表</h3>
+                    <p>完整的 18 週課程規劃，包含教學目標、評量方式、設備需求</p>
+                    <a href="../課程規劃表_v1.0.md" class="resource-link">查看文件 →</a>
+                </div>
+                <div class="resource-card">
+                    <i class="fas fa-calendar-alt"></i>
+                    <h3>週次進度表</h3>
+                    <p>快速查看每週主題、Python 重點與飛行內容</p>
+                    <a href="../週次進度表.md" class="resource-link">查看文件 →</a>
+                </div>
+                <div class="resource-card">
+                    <i class="fas fa-book-open"></i>
+                    <h3>課程大綱詳細版</h3>
+                    <p>詳細教學計畫、教學方法、評量設計與安全規範</p>
+                    <a href="../課程大綱_詳細版.md" class="resource-link">查看文件 →</a>
+                </div>
+                <div class="resource-card">
+                    <i class="fab fa-github"></i>
+                    <h3>GitHub 專案</h3>
+                    <p>下載所有教材、範例程式碼與課程文件</p>
+                    <a href="https://github.com/你的帳號/Python-Flight-Academy" class="resource-link" target="_blank">前往 GitHub →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 所需設備 -->
+    <section class="section equipment-section">
+        <div class="container">
+            <h2 class="section-title">所需設備</h2>
+            <div class="equipment-grid">
+                <div class="equipment-column">
+                    <h3><i class="fas fa-laptop-code"></i> 軟體環境（免費）</h3>
+                    <ul class="equipment-list">
+                        <li>
+                            <i class="fab fa-python"></i>
+                            <span>Python 3.8+</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-cube"></i>
+                            <span>Webots R2023b 模擬器</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-code"></i>
+                            <span>VSCode 編輯器</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-download"></i>
+                            <span>cflib Python 函式庫</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="equipment-column">
+                    <h3><i class="fas fa-drone"></i> 硬體設備（每組約 $12,000）</h3>
+                    <ul class="equipment-list">
+                        <li>
+                            <i class="fas fa-circle"></i>
+                            <span>Crazyflie 2.1 無人機 - $6,000</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-circle"></i>
+                            <span>Crazyradio PA 連線模組 - $1,200</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-circle"></i>
+                            <span>Flow Deck v2 定位感測器 - $1,500</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-circle"></i>
+                            <span>備用電池 x3 - $900</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-circle"></i>
+                            <span>保護罩 - $600</span>
+                        </li>
+                    </ul>
+                    <p class="equipment-note">💡 建議 2-3 人一組共用設備</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 聯絡我們 -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <h2 class="section-title">聯絡我們</h2>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <i class="fas fa-envelope"></i>
+                    <h3>聯絡信箱</h3>
+                    <p>（待填寫）</p>
+                </div>
+                <div class="contact-card">
+                    <i class="fab fa-github"></i>
+                    <h3>GitHub</h3>
+                    <p><a href="https://github.com/你的帳號/Python-Flight-Academy" target="_blank">專案倉庫</a></p>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-school"></i>
+                    <h3>合作單位</h3>
+                    <p>內湖高工</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>飛行驅動 Python</h4>
+                    <p>讓程式起飛，讓學習翱翔</p>
+                </div>
+                <div class="footer-section">
+                    <h4>快速連結</h4>
+                    <ul>
+                        <li><a href="#about">課程簡介</a></li>
+                        <li><a href="#schedule">課程架構</a></li>
+                        <li><a href="#features">課程特色</a></li>
+                        <li><a href="#resources">教學資源</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>相關資源</h4>
+                    <ul>
+                        <li><a href="https://www.bitcraze.io/" target="_blank">Crazyflie 官網</a></li>
+                        <li><a href="https://cyberbotics.com/" target="_blank">Webots 官網</a></li>
+                        <li><a href="https://www.k12ea.gov.tw/" target="_blank">108 課綱</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Python Flight Academy. Made with ❤️ for Taiwan High School Education.</p>
+                <p>Licensed under <a href="https://opensource.org/licenses/MIT" target="_blank">MIT License</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
